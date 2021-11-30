@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="looks.css">
+<meta charset="UTF-8">
+
+<title> Home Page </title>
+
+<style type="text/css">
+
+    #map {
+      height: 400px;
+  
+      width: 400px;
+ 
+    }
+  </style>
+  <script>
+
+    function initMap() {
+    
+      const Kingston = { lat: 18.0179, lng: -76.8099 };
+     
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 8,
+        center: Kingston,
+      });
+      
+      const marker = new google.maps.Marker({
+        position: Kingston,
+        map: map,
+      });
+    }
+  </script>
+
+</head> 
+
+<body> 
+
+<header>
+
+<h1>Welcome</h1>
+
+</header>
+
+<nav> 
+
+    <ul>
+    <li><a href="index.html">Home Page</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    </ul>
+    
+</nav>
+
+<main> 
+
+<h2>Hometown</h2>
+
+<p>
+    I was born in Kingston, Jamaica!
+</p>
+
+<div id="map"></div>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYp_3Gt5tfG-qwpAWm7PXfaGHiMtEU4IM&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+
+<h3>Developr In Progress</h3>
+
+<p>Working on completing DevBuild 7.</p>
+
+</main>
+
+<footer> 
+
+    <p>
+    <a href="index.html">Home Page</a>|
+    <a href="about.html">About</a>|
+    <a href="contact.html">Contact</a>
+    </p>
+    
+</footer>
+
+</body>
+
+</html>
